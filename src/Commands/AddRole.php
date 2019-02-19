@@ -7,7 +7,7 @@ use Shortcodes\Roles\Models\Role;
 
 class AddRole extends Command
 {
-    protected $signature = 'role:add {role}';
+    protected $signature = 'roles:add {role}';
 
     protected $description = 'Add role';
 

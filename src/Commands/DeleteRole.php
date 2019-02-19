@@ -7,7 +7,7 @@ use Shortcodes\Roles\Models\Role;
 
 class DeleteRole extends Command
 {
-    protected $signature = 'role:delete {role}';
+    protected $signature = 'roles:delete {role}';
 
     protected $description = 'Delete role';
 
