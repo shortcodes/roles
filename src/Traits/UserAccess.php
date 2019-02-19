@@ -40,6 +40,6 @@ trait UserAccess
 
     public function roles()
     {
-        return $this->belongsToMany(Role::class, 'user_role');
+        return $this->belongsToMany(Role::class, 'user_role', 'user_id', 'role_id');
     }
 }
