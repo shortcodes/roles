@@ -16,7 +16,7 @@ trait UserAccess
         return false;
     }
 
-    public function add($role)
+    public function addRole($role)
     {
         $roleObject = Role::whereName($role)->first();
 
@@ -27,7 +27,7 @@ trait UserAccess
         $this->roles()->attach($roleObject->id);
     }
 
-    public function remove($role)
+    public function removeRole($role)
     {
         $roleObject = Role::whereName($role)->first();
 
