@@ -1,0 +1,32 @@
+{
+    "name": "shortcodes/roles",
+    "description": "The package allows to managing roles and assigning them to users",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Roman Szymanski",
+            "email": "roman.szymanski@shortcodes.pl"
+        },
+        {
+            "name": "Marcin Głuch",
+            "email": "m.gluch@mindz.it"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shortcodes\\Roles\\RolesPackageProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Shortcodes\\Roles\\": "src/"
+        }
+    }
+}
