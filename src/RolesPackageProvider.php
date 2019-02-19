@@ -1,6 +1,6 @@
 <?php
 
-namespace Shortcodes\Authentication;
+namespace Shortcodes\Roles;
 
 use Illuminate\Support\ServiceProvider;
 use Shortcodes\Roles\Commands\AddRole;
