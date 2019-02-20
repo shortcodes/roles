@@ -3,6 +3,7 @@
 namespace Shortcodes\Roles\Traits;
 
 
+use Illuminate\Support\Facades\Auth;
 use Shortcodes\Roles\Models\Role;
 
 trait UserAccess
@@ -14,6 +15,11 @@ trait UserAccess
         }
 
         return false;
+    }
+
+    public function isAdmin()
+    {
+        return in_array(Auth::user()->email, config('access.admins'));
     }
 
     public function addRole($role)
